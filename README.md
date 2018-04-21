@@ -1,4 +1,4 @@
-# typedoc-theme-color
+# typedoc-themes-color
 
     Add little color for Default themes by TypeDoc.
 

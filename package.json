@@ -1,32 +1,35 @@
 {
   "name": "typedoc-themes-color",
-  "version": "0.0.4",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
+  "version": "0.0.5",
   "description": "Add little color for Default themes by TypeDoc.",
-  "devDependencies": {
-    "typedoc-default-themes": "^0.5.0"
+  "keywords": [
+    "api",
+    "docs",
+    "documentation",
+    "generator",
+    "theme",
+    "themes",
+    "typedoc",
+    "typedoc-themes",
+    "typescript"
+  ],
+  "homepage": "https://github.com/bluelovers/typedoc-themes-color#readme",
+  "bugs": {
+    "url": "https://github.com/bluelovers/typedoc-themes-color/issues"
   },
-  "dependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bluelovers/typedoc-themes-color.git"
   },
-  "bugs": {
-    "url": "https://github.com/bluelovers/typedoc-themes-color/issues"
+  "license": "ISC",
+  "author": "",
+  "main": "index.js",
+  "scripts": {
+    "build:scss": "npx node-sass --output-style expanded --indent-type tab --indent-width 1 --source-comments --source-map-embed -o ./theme/assets/css ./theme/assets/css/main.plus.scss",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [
-    "typescript",
-    "documentation",
-    "typedoc",
-    "theme",
-    "docs",
-    "api",
-    "generator"
-  ],
-  "homepage": "https://github.com/bluelovers/typedoc-themes-color#readme"
+  "dependencies": {},
+  "devDependencies": {
+    "typedoc-default-themes": "^0.5.0"
+  }
 }
